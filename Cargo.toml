@@ -3,4 +3,8 @@ name = "checked_sum"
 version = "0.1.0"
 edition = "2021"
 
+[features]
+num = [ "dep:num" ]
+
 [dependencies]
+num = { version = "0.4.3", optional = true, default-features = false }
